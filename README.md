@@ -12,7 +12,7 @@ HTML
 CSS
 JavaScript
 
-Web Functions
+Web Functions;
 The user is supposed to enter their birthday through a form 
 Choose what gender they are.
 Click the submit button and wait to see what their Akan name would be.
