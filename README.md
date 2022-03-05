@@ -8,9 +8,9 @@ Link to live site https://github.com/tessyotieno/myAkanNames/
 Methods used to build web; 
 HTML
 CSS
-javaScript
+JavaScript
 
 Web Functions
 The user is supposed to enter their birthday through a form 
 Choose what gender they are.
-Click the submit button wait to see what their Akan name would be.
+Click the submit button and wait to see what their Akan name would be.
