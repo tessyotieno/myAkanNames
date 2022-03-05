@@ -8,9 +8,9 @@ Email: t.tesslah@gmail.com
 Link to live site https://github.com/tessyotieno/myAkanNames/
 
 Technologies used to build web; 
-*HTML
-*CSS
-*JavaScript
+* HTML
+* CSS
+* JavaScript
 
 Web Functions;
 The user is supposed to enter their birthday through a form 
