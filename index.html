@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myAkanNames</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet">
+    <link rel="stylesheet" type="text.css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>AKAN NAMES</h1>
+    </div>
+    <div class="container">
+        <p>Some people do not know the day they were born but know their birthday date.
+            This web app helps one to identify the day they were born in regards to their Akan names. The user has to key in their birth date and click on submit, the day they were born will appear.</p>
+        <div class="row">
+            <div class="col lg">
+        <div class="col lg">
+                <h3 id="display"></h3>
+            
+            </div>
+            <div class="col">
+                <div id="form">
+                    <div class="centre">
+                        <label>day</label><br>
+                        <input class="form-control justify-content-center" type="number" id="day" name="day"
+                            placeholder="01" required style="width: 200px;">
+                        <label>month</label><br>
+                        <input class="form-control" type="number" id="month" name="month" placeholder="01" required
+                            style="width: 200px;">
+                        <label>year</label><br>
+                        <input class="form-control" type="number" id="year" name="year" placeholder="2000" required
+                            style="width: 200px;">
+                        <label>select gender</label><br>
+                        <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                        <input type="submit" class="btn btn-warning" value="Submit" onclick="showName()">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>     
