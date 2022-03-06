@@ -30,44 +30,47 @@ function showName() {
         saturday: "Ama"
     }
     ];
-    //create gender variable
+    //gender variable
     if (document.getElementById("gender").checked) {
         var gender = 'male';
     }
     else {
         var gender = 'female';
     }
-    if (mm < 1 || mm > 12 || mm == 2 && dd > 29) {
     //validate month
-
-    // this will check if the day entered is valid
+    
+    // checking if the day entered is valid
      if (dd < 1 || dd > 31) {
         document.getElementById("display").innerHTML = "The day you entered is invalid";
     }
    else if (mm < 1 || mm > 12 || mm == 2) {
         document.getElementById("display").innerHTML = "The month you entered is invalid";
     }
-    // this will check if the month entered is valid
-    else if (dd < 1 || dd > 31) {
-        document.getElementById("display").innerHTML = "The day you entered is invalid";
-    }
-    // this will check if the day entered is valid
+    // checking if the month entered is valid
     else if (Math.round(dayOfTheWeek) == 0 && gender === 'male') {
         document.getElementById("display").innerHTML = "since you are a male born on sunday,your Akan name is " + akanNames[0].sunday;
     }
-@@ -68,6 +70,7 @@ function showName() {
+    // checking day Of The Week and whether the gender entered is male
+    else if (Math.round(dayOfTheWeek) == 1 && gender === 'male') {
+        document.getElementById("display").innerHTML = "since you are a male born on monday,your Akan name is " + akanNames[0].monday;
+    }
+    else if (Math.round(dayOfTheWeek) == 2 && gender === 'male') {
+        document.getElementById("display").innerHTML = "since you are a male born on tuesday,your Akan name is " + akanNames[0].tuesday;
+    }
+    else if (Math.round(dayOfTheWeek) == 3 && gender === 'male') {
+        document.getElementById("display").innerHTML = "since you are a male born on wednesday,your Akan name is " + akanNames[0].wednesday;
+    }
+    else if (Math.round(dayOfTheWeek) == 4 && gender === 'male') {
+        document.getElementById("display").innerHTML = "since you are a male born on thursday,your Akan name is " +akanNames[0].thursday;
+    }
+    else if (Math.round(dayOfTheWeek) == 5 && gender === 'male') {
+        document.getElementById("display").innerHTML = "since you are a male born on friday,your Akan name is " + akanNames[0].friday;
+    }
+    else if (Math.round(dayOfTheWeek) == 6 && gender === 'male') {
         document.getElementById("display").innerHTML = "since you are a male born on saturday,your Akan name is " + akanNames[0].saturday;
     }
-    // this will check dayOfTheWeek and whether the gender entered is female
-
-    else if (Math.round(dayOfTheWeek) == 0 && gender === 'female') {
-        document.getElementById("display").innerHTML = "since you are a female born on sunday,your Akan name is " + akanNames[1].sunday;
-    }
-    function showName() {
-        document.getElementById("display").innerHTML = "since you are a male born on saturday,your Akan name is " + akanNames[0].saturday;
-    }
-    // this will check dayOfTheWeek and whether the gender entered is female
-
+    // checking day Of The Week and whether the gender entered is female
+    
     else if (Math.round(dayOfTheWeek) == 0 && gender === 'female') {
         document.getElementById("display").innerHTML = "since you are a female born on sunday,your Akan name is " + akanNames[1].sunday;
     }
@@ -91,3 +94,6 @@ function showName() {
         document.getElementById("display").innerHTML = "since you are a female born on saturday,your Akan name is " + akanNames[1].saturday;
     }
     else {
+        document.getElementById("display").innerHTML = "please input valid data";
+    }
+}
